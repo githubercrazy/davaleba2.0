@@ -1,0 +1,123 @@
+
+body,
+html {
+  background: rgb(244, 244, 244);
+  font-family: "Varela Round", sans-serif;
+}
+.new-header{
+ display: flex;
+ width: 100%; 
+ justify-content: space-between;
+}
+.main-title{
+    gap: 10px;
+}
+.header{
+    display: flex;
+    gap: 30px;
+}
+.sub-span, .add-card{
+padding-top: 15px;
+}
+
+.tab{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.main-tab{
+    background-color: #FFFFFF;
+}
+.tab ul{
+    list-style: none;
+    display: flex;
+    border: 1px rgb(230, 230, 230) solid;
+    padding: 0;
+}
+.tab li{
+    min-width: 200px;
+    padding: 10px 15px 15px;
+    border-right: 1px green solid;
+    text-align: left;
+    flex: 1;
+}
+.tab li:last-child{
+    border-right: 0px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+.item{
+    width: 100%;
+}
+.header{
+    justify-content: space-between;
+    background: linear-gradient(90.09deg, #FFFFFF 1%, rgba(245, 248, 252, 0.51) 99.92%);
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    background: rgba(255, 255, 255, 1);
+    padding: 20px;
+}
+.title-main{
+    display: flex;
+    padding: 20px;
+    color: #3E8EDE;
+}
+.title-secondary{
+    padding: 20px;
+    color: #2DA771;
+}
+.text-main p, .text-secondary p{
+    top: 0;
+    margin: 0;
+    margin-top: 7px;
+}
+.text-main span{
+    color: rgba(153, 153, 153, 1);
+}
+.text-main{
+    border-right: 1px rgb(190, 190, 190) solid;
+    padding: 35px;
+    flex: 1;
+}
+.text-main:last-child{
+    border-right: 0px;
+}
+
+
+@media (max-width: 1050px){
+  .content{
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 0;
+  }
+  .text-main{
+    padding: 15px;
+    border-right: 0;
+    border-bottom: 1px rgb(190, 190, 190) solid;
+  }
+  .text-main:last-child{
+    border-bottom: 0px;
+}
+
+}
+
+@media (max-width: 724px){
+    .title-main{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+@media (max-width: 850px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .tab li{
+        min-width: unset;
+    }
+}
